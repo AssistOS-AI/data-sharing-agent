@@ -1,0 +1,16 @@
+{
+  "name": "open-dataspace-hub",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "start": "node src/server.mjs",
+    "test": "for file in test/*.test.mjs; do node --test \"$file\" || exit 1; done"
+  },
+  "dependencies": {
+    "@huggingface/hub": "2.17.11"
+  }
+}
